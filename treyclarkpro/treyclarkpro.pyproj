@@ -77,12 +77,15 @@
     <Folder Include="portfolio\templates\portfolio\" />
     <Folder Include="projects\" />
     <Folder Include="projects\migrations\" />
+    <Folder Include="projects\static\" />
+    <Folder Include="projects\static\img\" />
     <Folder Include="projects\templates\" />
     <Folder Include="projects\templates\projects\" />
     <Folder Include="treyclarkpro\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="portfolio\templates\portfolio\index.html" />
+    <Content Include="projects\static\img\coding-computer-data-depth-of-field-577585.jpg" />
     <Content Include="projects\templates\projects\index.html" />
     <Content Include="requirements.txt" />
     <Content Include="db.sqlite3" />
