@@ -4,6 +4,8 @@
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <Name>treyclarkpro</Name>
     <RootNamespace>treyclarkpro</RootNamespace>
+    <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
+    <TestFramework>Pytest</TestFramework>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -37,6 +39,23 @@
     <Compile Include="app\__init__.py" />
     <Compile Include="app\migrations\__init__.py" />
     <Compile Include="manage.py" />
+    <Compile Include="portfolio\admin.py" />
+    <Compile Include="portfolio\apps.py" />
+    <Compile Include="portfolio\migrations\__init__.py" />
+    <Compile Include="portfolio\models.py" />
+    <Compile Include="portfolio\tests.py" />
+    <Compile Include="portfolio\views.py" />
+    <Compile Include="portfolio\__init__.py" />
+    <Compile Include="projects\admin.py" />
+    <Compile Include="projects\apps.py" />
+    <Compile Include="projects\migrations\__init__.py" />
+    <Compile Include="projects\models.py" />
+    <Compile Include="projects\tests.py" />
+    <Compile Include="projects\urls.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="projects\views.py" />
+    <Compile Include="projects\__init__.py" />
     <Compile Include="treyclarkpro\__init__.py" />
     <Compile Include="treyclarkpro\settings.py" />
     <Compile Include="treyclarkpro\urls.py" />
@@ -52,9 +71,19 @@
     <Folder Include="app\static\app\scripts\" />
     <Folder Include="app\templates\" />
     <Folder Include="app\templates\app\" />
+    <Folder Include="portfolio\" />
+    <Folder Include="portfolio\migrations\" />
+    <Folder Include="portfolio\templates\" />
+    <Folder Include="portfolio\templates\portfolio\" />
+    <Folder Include="projects\" />
+    <Folder Include="projects\migrations\" />
+    <Folder Include="projects\templates\" />
+    <Folder Include="projects\templates\projects\" />
     <Folder Include="treyclarkpro\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="portfolio\templates\portfolio\index.html" />
+    <Content Include="projects\templates\projects\index.html" />
     <Content Include="requirements.txt" />
     <Content Include="db.sqlite3" />
     <Content Include="app\static\app\content\bootstrap.css" />
@@ -90,6 +119,17 @@
     <None Include="readme.html">
       <SubType>WebBrowser</SubType>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="env\">
+      <Id>env</Id>
+      <Version>3.7</Version>
+      <Description>env (Python 3.7)</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Django.targets" />
   <!-- Specify pre- and post-build commands in the BeforeBuild and 
