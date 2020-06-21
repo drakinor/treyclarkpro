@@ -73,16 +73,22 @@
     <Folder Include="app\templates\app\" />
     <Folder Include="portfolio\" />
     <Folder Include="portfolio\migrations\" />
+    <Folder Include="portfolio\static\" />
+    <Folder Include="portfolio\static\img\" />
     <Folder Include="portfolio\templates\" />
     <Folder Include="portfolio\templates\portfolio\" />
     <Folder Include="projects\" />
     <Folder Include="projects\migrations\" />
+    <Folder Include="projects\static\" />
+    <Folder Include="projects\static\projects\" />
+    <Folder Include="projects\static\projects\img\" />
     <Folder Include="projects\templates\" />
     <Folder Include="projects\templates\projects\" />
     <Folder Include="treyclarkpro\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="portfolio\templates\portfolio\index.html" />
+    <Content Include="projects\static\projects\img\test.jpg" />
     <Content Include="projects\templates\projects\index.html" />
     <Content Include="requirements.txt" />
     <Content Include="db.sqlite3" />
