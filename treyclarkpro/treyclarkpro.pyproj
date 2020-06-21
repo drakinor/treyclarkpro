@@ -89,6 +89,7 @@
   <ItemGroup>
     <Content Include="portfolio\templates\portfolio\index.html" />
     <Content Include="projects\static\projects\img\test.jpg" />
+    <Content Include="projects\templates\projects\all_projects.html" />
     <Content Include="projects\templates\projects\index.html" />
     <Content Include="requirements.txt" />
     <Content Include="db.sqlite3" />

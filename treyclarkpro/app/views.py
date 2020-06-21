@@ -44,5 +44,3 @@ def about(request):
             'year':datetime.now().year,
         }
     )
-def project_list(request):
-    return render(request, 'projects/index.html')
