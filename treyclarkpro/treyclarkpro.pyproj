@@ -88,6 +88,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="portfolio\templates\portfolio\index.html" />
+    <Content Include="projects\static\projects\img\test2.jpeg" />
     <Content Include="projects\static\projects\img\test.jpg" />
     <Content Include="projects\templates\projects\all_projects.html" />
     <Content Include="projects\templates\projects\index.html" />
