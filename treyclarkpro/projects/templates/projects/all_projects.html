@@ -8,14 +8,22 @@
     <title></title>
 </head>
 <body>
-    <h1>hell again?</h1>
-    {{ projects }}
+<div class="container">
+    <h1>Projects</h1>
+    <div class="row">
     {% for project in projects %}
-        <img src="{% static project.image %}" alt="screenshot of project" />
-        <p>{{ project.image }}</p>
-        <h1>{{ project.title}}</h1>
-        <p>{{ project.description }}</p>
-        <p>{{ project.technology}}</p>
+        <div class="col-md-4">
+            <div class="card mb-2">
+                <img class="card-img-top" src="{% static project.image %}">
+                <div class="card-body">
+                    <h5 class="card-title">{{ project.title }}</h5>
+                    <p class="card-text">{{ project.description }}</p>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
     {% endfor %}
+</div>
+</div>
 </body>
 </html>
